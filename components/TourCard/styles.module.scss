@@ -1,0 +1,54 @@
+.container {
+  --inner-padding: 1.25rem;
+  background-color: var(--card-color);
+  border-radius: var(--inner-padding);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+
+  img {
+    border-radius: var(--inner-padding);
+    object-fit: cover;
+    height: 384px;
+    width: 100%;
+  }
+
+  section {
+    padding: var(--inner-padding);
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      line-height: 150%;
+      margin-top: var(--inner-padding);
+      // text-align: justify;
+    }
+  }
+
+  @media (min-width: 480px) {
+    --inner-padding: 2rem;
+  }
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+    max-height: 24rem;
+    // max-width: 67.5rem;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    img {
+      flex-shrink: 1;
+      height: 380px;
+      width: 415px;
+    }
+    
+    section {
+      flex: 1;
+    }
+  }
+}
