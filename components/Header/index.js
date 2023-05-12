@@ -18,6 +18,7 @@ export default () => {
         <Link href="/cultura">Cultura</Link>
         <Link href="/gastronomia">Gastronomia</Link>
         <Link href="/hotelaria">Hotelaria</Link>
+        <Link href="/outros-servicos">Outros</Link>
       </nav>
     </div>
   )

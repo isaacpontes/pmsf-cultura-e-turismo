@@ -5,12 +5,14 @@ import ContactCard from '@/components/ContactCard'
 import ContactCardsSection from '@/components/ContactCardsSection'
 
 const RESTAURANTS = [
+  { name: "House 972", address: "Praça São Fidélis, 15, Centro.", phone: "(22) 99845-9702" },
+  { name: "Lanchonete Prêmio", address: "Rua Dr. José Francisco, 160, Centro.", phone: "(22) 99615-0974" },
   { name: "Oficina do Caldo", address: "Rua Euclides da Cunha, 521, Centro.", phone: "(22) 99906-8587" },
+  { name: "Pesque e Pague Tabuinha", address: "RJ 234 KM 14, Pureza, São Fidélis-RJ.", phone: "(22) 99969-0439" },
   { name: "Pizzaria Cantina Di Norma", address: "Rua Coronel João Sanches, 21, Centro.", phone: "(22) 2758-2373" },
-  { name: "Pizzaria Cantinho do Sabor", address: "Rua Euclides da Cunha, Quiosque 04, Centro.", phone: "(22) 997401673" },
   { name: "Pizzaria Canto do Rio", address: "Av. Jacy Nade, 185, Pureza.", phone: "(22) 2751-2701" },
-  { name: "Reservado", address: "Rua Loureiro, 364, Ipuca.", phone: "(22) 99942-4422" }
-
+  { name: "Pizzaria Cantinho do Sabor", address: "Rua Euclides da Cunha, Quiosque 04, Centro.", phone: "(22) 997401673" },
+  { name: "Reservado", address: "Rua Loureiro, 364, Ipuca.", phone: "(22) 99942-4422" },
 ]
 
 export default function Gastronomia() {

@@ -13,6 +13,8 @@ import imgParque from '@/assets/images/parque-desengano.jpeg'
 import imgSolar from '@/assets/images/solar-barao-vila-flor.jpeg'
 import imgPontePreta from '@/assets/images/ponte-preta.jpg'
 import imgCruzeiro from '@/assets/images/morro-do-cruzeiro.png'
+import imgPocoParado from '@/assets/images/poco-parado.jpg'
+import imgRioDoColegio from '@/assets/images/rio-do-colegio.jpg'
 
 const ATTRACTIONS = [
   {
@@ -66,14 +68,15 @@ const ATTRACTIONS = [
     description: 'Conhecida como “Ponte Preta”, está sobre o Rio Paraíba do Sul ostentando um dos mais belos cartões postais da Cidade Poema. Construída pela Estrada de Ferro Leopoldina Railway em fins do século XIX, era ardentemente desejada por todos que usavam os trens da companhia, mas que precisavam atravessar o rio de barco depois de saírem dos vagões por causa da inexistência de uma via. Sua construção também oportunizou o escoamento da produção agrícola de toda a região. Com a desativação dos trilhos, a Ponte Ferroviária permaneceu como destino turístico para a produção de belas fotografias, seja da ponte, seja da natureza que dali se contempla.'
   },
   {
+    img: imgPocoParado,
     title: "Poço Parado",
     description: "Localidade serrana de muita sombra, cachoeiras encantadoras, águas cristalinas e exuberantes fauna e flora da Mata Atlântica em terras fidelenses, Poço Parado é o destino ideal para quem quer curtir a natureza com familiares e amigos. Encontra-se no Parque Estadual do Desengano, com vegetação de médio e grande porte e formações geológicas surpreendentes."
   },
   {
+    img: imgRioDoColegio,
     title: "Rio do Colégio",
     description: "Ao longo de 35km exclusivamente fidelenses, o Rio do Colégio apresenta cachoeiras, praias e piscinas naturais que encantam a todos. Munícipes e turistas aqui se encontram para aproveitar as belezas da natureza em pontos de lazer e também para se saciar na apreciação da culinária local. Com acessos pela RJ 158 ou pela estrada que atravessa a comunidade de Vargem Grande, o Rio do Colégio é atração turística propícia em qualquer época do ano, com os cuidados e atenção devidos, para banhos, passeios ciclísticos, contemplação da natureza entre outras formas de aproveitar o patrimônio ambiental. "
   },
-  
   {
     img: imgCruzeiro,
     title: 'Morro do Cruzeiro',

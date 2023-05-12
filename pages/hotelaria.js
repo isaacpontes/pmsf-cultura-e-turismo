@@ -6,12 +6,13 @@ import ContactCardsSection from '@/components/ContactCardsSection'
 
 const HOTELS = [
   { name: "Hotel Leicam", address: "Praça Guilherme Tito de Azevedo, 45, Centro.", phone: "(22) 2758-1278" },
-  { name: "São Fidélis Palace Hotel", address: "Praça Guilherme Tito de Azevedo, 55, Centro.", phone: "(22) 2758-2240" },
-  { name: "Solar Hotel", address: "Rua Doutor Faria Serra, 17, Centro.", phone: "(22) 2758-6538" },
   { name: "Hotel São José", address: "Praça São Fidélis, 214, Centro.", phone: "(22) 2758-2428" },
   { name: "Pousada Beira Rio", address: "Rua Emídio Maia Santos, 1386, Vila dos Coroados.", phone: "(22) 2758-2075" },
   { name: "Pousada Clube Cachoeira do Salto", address: "Rua Emídio Maia Santos, 1500, Vila dos Coroados.", phone: "(22) 2758-5871" },
-  { name: "Pousada Pureza", address: "Av. Jacy Nader, 411, Pureza.", phone: "(22) 2751-1218" }
+  { name: "Pousada Du Rancho", address: "RJ 158 KM 34, Ernesto Machado, São Fidélis-RJ", phone: "(22) 99884-8444" },
+  { name: "Pousada Pureza", address: "Av. Jacy Nader, 411, Pureza.", phone: "(22) 2751-1218" },
+  { name: "São Fidélis Palace Hotel", address: "Praça Guilherme Tito de Azevedo, 55, Centro.", phone: "(22) 2758-2240" },
+  { name: "Solar Hotel", address: "Rua Doutor Faria Serra, 17, Centro.", phone: "(22) 2758-6538" },
 ]
 
 export default function Hotelaria() {
@@ -31,6 +32,7 @@ export default function Hotelaria() {
               title={hotel.name}
               address={hotel.address}
               phone={hotel.phone}
+              link="#"
             />
           )}
         </ContactCardsSection>

@@ -6,6 +6,7 @@ import imgTurismo from '@/assets/images/morro-do-cruzeiro.png'
 import imgCultura from '@/assets/images/feira-de-artesanato.jpg'
 import imgHotelaria from '@/assets/images/pexels-pixabay-164595.jpg'
 import imgGastronomia from '@/assets/images/pexels-sydney-troxell-718742.jpg'
+import imgOutros from '@/assets/images/outros-servicos.webp'
 import MainLayout from '@/layouts/MainLayout'
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
           <LinkCard to="/cultura" label="Cultura" backgroundImage={imgCultura} />
           <LinkCard to="/gastronomia" label="Gastronomia" backgroundImage={imgGastronomia} />
           <LinkCard to="/hotelaria" label="Hotelaria" backgroundImage={imgHotelaria} />
+          <LinkCard to="/outros-servicos" label="Outros Serviços" backgroundImage={imgOutros} />
         </section>
       </MainLayout>
     </>
