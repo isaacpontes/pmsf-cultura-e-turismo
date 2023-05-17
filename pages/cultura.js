@@ -4,7 +4,9 @@ import LayoutWithHeader from '@/layouts/LayoutWithHeader'
 import TourCard from '@/components/TourCard'
 import imgFolia from '@/assets/images/folia-de-reis.jpg'
 import imgPadroeiro from '@/assets/images/festa-do-padroeiro.jpg'
-import imgPoesia from '@/assets/images/festival-de-poesia.jpg'
+import imgPoesia from '@/assets/images/festivais-de-poesia.jpeg'
+import imgFeiras from '@/assets/images/feiras-culturais.jpeg'
+import imgExposicao from '@/assets/images/exposicao-agropecuaria.jpg'
 
 const EVENTS = [
   {
@@ -28,10 +30,12 @@ const EVENTS = [
     description: "Sendo conhecida, desde os anos 1940, como a Cidade Poema, São Fidélis celebra anualmente a arte da palavra por meio de seu Festival de Poesia, reunindo no município poetas de outros lugares e destacando também seus talentos locais. Geralmente acontecendo nas primaveras de cada ano, o concurso é conhecido em todo o Brasil pela qualidade dos trabalhos inscritos, bem como pela digna validação que os Festivais conferem aos trabalhos de escrita e declamação. Com as primeiras edições remontando aos anos 1960, atualmente os festivais já apresentaram variedades especiais, como as dedicadas exclusivamente aos poetas de São Fidélis, aos estudantes e aos artistas com mais de 60 anos de idade."
   },
   {
+    img: imgFeiras,
     title: "Feiras Culturais",
     description: "Para acompanhar especialmente os Festivais de Poesia de cada primavera, a cidade recebe uma série de eventos culturais, artísticos e educacionais, numa maratona deliciosa de participar. Realizadas em praça pública, as atrações dialogam com os públicos de todas as idades que circulam pelo seu espaço, em ações que, por meio de linguagens diversas, dão novo ritmo ao centro de São Fidélis. Tendo a culminância no Festival de Poesia, as atrações se direcionam de maneira particular ao incentivo da leitura, contando com uma feira de livros atenta a todos os gostos dos leitores fidelenses."
   },
   {
+    img: imgExposicao,
     title: "Exposição Agropecuária",
     description: "Anualmente se celebram em São Fidélis aspectos da vida no campo e atividades econômicas que fazem girar a roda da economia fidelense. Atrações musicais, exibições artísticas e culturais, concursos, festas do laço e rodeios animaram em sucessivas edições da Exposição Agropecuária os munícipes e visitantes, em comemorações àqueles que da terra tiram o sustento e colocam no prato de milhares de pessoas as refeições de cada dia. Aproveitando o frio costumeiro do inverno fidelense, este é um evento cativante para todos os públicos."
   }
