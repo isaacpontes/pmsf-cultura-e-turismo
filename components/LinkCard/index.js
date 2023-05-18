@@ -9,14 +9,13 @@ const playfair = Playfair_Display({ weight: ['400'], subsets: ['latin'] })
 
 export default ({ label, to, backgroundImage }) => (
   <motion.article
-    className={styles.container}
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     viewport={{ amount: 0.25 }}
   >
-    <Image src={backgroundImage} alt='' />
-    <h2 className={playfair.className}>{label}</h2>
-    <Link href={to}>
+    <Link href={to} className={styles.container}>
+      <Image src={backgroundImage} alt='' height={352} width={328} priority />
+      <h2 className={playfair.className}>{label}</h2>
       <ArrowRight />
     </Link>
   </motion.article>

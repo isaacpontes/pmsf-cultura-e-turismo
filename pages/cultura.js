@@ -1,40 +1,46 @@
 import Head from 'next/head'
-import imgCover from '@/assets/images/feira-de-artesanato.jpg'
+import imgCover from '@/assets/images/feira-de-artesanato.webp'
 import LayoutWithHeader from '@/layouts/LayoutWithHeader'
 import TourCard from '@/components/TourCard'
-import imgFolia from '@/assets/images/folia-de-reis.jpg'
-import imgPadroeiro from '@/assets/images/festa-do-padroeiro.jpg'
-import imgPoesia from '@/assets/images/festivais-de-poesia.jpeg'
-import imgFeiras from '@/assets/images/feiras-culturais.jpeg'
-import imgExposicao from '@/assets/images/exposicao-agropecuaria.jpg'
+import imgFolia from '@/assets/images/folia-de-reis.webp'
+import imgPadroeiro from '@/assets/images/festa-do-padroeiro.webp'
+import imgPoesia from '@/assets/images/festivais-de-poesia.webp'
+import imgFeiras from '@/assets/images/feiras-culturais.webp'
+import imgExposicao from '@/assets/images/exposicao-agropecuaria.webp'
 
 const EVENTS = [
   {
+    id: 1,
     img: imgFolia,
     title: "Folias de Reis",
     description: "Forte manifestação da cultura fidelense, bem como de outras cidades da região, criada no encontro de elementos religiosos e seculares de origens diversas. Espécie de representação popular que remete à jornada dos Reis Magos até o local do nascimento de Cristo, fazendo referência também à perseguição do rei Herodes e posterior massacre de inocentes bebês. As Folias de Reis reúnem elementos de grande simbologia, tradição e alegria. Nas ruas de São Fidélis e arredores, nos meses de dezembro a fevereiro especialmente, é possível ouvir seus cânticos e ver as apresentações sempre únicas."
   },
   {
+    id: 2,
     img: imgCover,
     title: "Feira de Artesanato",
     description: "Semanalmente os fidelenses e visitantes da Cidade Poema podem ter contato, num único lugar, com o que alguns de seus talentosos artistas estão produzindo. A Feira de Artesanato acontece no Jardim Getúlio Vargas, na Praça Guilherme Tito de Azevedo, aos finais de semana e reúne artesãos dos mais diversos ofícios, bem como iguarias muito saborosas e que representam o que há de melhor na culinária fidelense. A variedade de obras e encantos motiva a visita frequente à Feira, trazendo sempre novidades."
   },
   {
+    id: 3,
     img: imgPadroeiro,
     title: "Festa do Padroeiro",
     description: "Realizadas desde 1782, as festividades que celebram o santo católico São Fidélis de Sigmaringa, padroeiro da Cidade Poema, são os eventos mais antigos de nosso calendário e permanecem reunindo fidelenses e turistas em cada abril. Promovidos primeiramente pelos frades fundadores, os italianos Frei Ângelo de Lucca e Frei Vitório de Cambiasca, os festejos receberam desde sempre o apoio e a participação dos fazendeiros locais e demais poderosos da terra, o que contribuiu para a característica de uma programação simultaneamente religiosa e secular. Atualmente, a Festa do Padroeiro acontece, de maneira geral, de 15 a 24 de abril, com novenas, missas, procissões, projetos educacionais, eventos culturais, atrações artísticas, espetáculos musicais de renome nacional, atrativos culinários e muitas outras opções."
   },
   {
+    id: 4,
     img: imgPoesia,
     title: "Festivais de Poesia",
     description: "Sendo conhecida, desde os anos 1940, como a Cidade Poema, São Fidélis celebra anualmente a arte da palavra por meio de seu Festival de Poesia, reunindo no município poetas de outros lugares e destacando também seus talentos locais. Geralmente acontecendo nas primaveras de cada ano, o concurso é conhecido em todo o Brasil pela qualidade dos trabalhos inscritos, bem como pela digna validação que os Festivais conferem aos trabalhos de escrita e declamação. Com as primeiras edições remontando aos anos 1960, atualmente os festivais já apresentaram variedades especiais, como as dedicadas exclusivamente aos poetas de São Fidélis, aos estudantes e aos artistas com mais de 60 anos de idade."
   },
   {
+    id: 5,
     img: imgFeiras,
     title: "Feiras Culturais",
     description: "Para acompanhar especialmente os Festivais de Poesia de cada primavera, a cidade recebe uma série de eventos culturais, artísticos e educacionais, numa maratona deliciosa de participar. Realizadas em praça pública, as atrações dialogam com os públicos de todas as idades que circulam pelo seu espaço, em ações que, por meio de linguagens diversas, dão novo ritmo ao centro de São Fidélis. Tendo a culminância no Festival de Poesia, as atrações se direcionam de maneira particular ao incentivo da leitura, contando com uma feira de livros atenta a todos os gostos dos leitores fidelenses."
   },
   {
+    id: 6,
     img: imgExposicao,
     title: "Exposição Agropecuária",
     description: "Anualmente se celebram em São Fidélis aspectos da vida no campo e atividades econômicas que fazem girar a roda da economia fidelense. Atrações musicais, exibições artísticas e culturais, concursos, festas do laço e rodeios animaram em sucessivas edições da Exposição Agropecuária os munícipes e visitantes, em comemorações àqueles que da terra tiram o sustento e colocam no prato de milhares de pessoas as refeições de cada dia. Aproveitando o frio costumeiro do inverno fidelense, este é um evento cativante para todos os públicos."
@@ -61,7 +67,7 @@ export default function Cultura() {
         >
           {EVENTS.map(event =>
             <TourCard
-              key={event.name}
+              key={event.id}
               img={event.img}
               title={event.title}
               description={event.description}

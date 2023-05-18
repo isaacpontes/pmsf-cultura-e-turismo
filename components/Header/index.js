@@ -10,15 +10,15 @@ export default () => {
   return (
     <div className={styles.container}>
       <button onClick={() => setIsOpen(!isOpen)}>
-        <Image src={menuIcon} alt="Menu" className={isOpen ? styles.menuTransform : ''} />
+        <Image src={menuIcon} alt="Menu" className={isOpen ? styles.menuTransform : ''} priority />
       </button>
       <nav className={isOpen ? styles.nav : styles.navClosed}>
         <Link href="/">Início</Link>
         <Link href="/turismo">Turismo</Link>
         <Link href="/cultura">Cultura</Link>
-        <Link href="/gastronomia">Gastronomia</Link>
+        {/* <Link href="/gastronomia">Gastronomia</Link>
         <Link href="/hotelaria">Hotelaria</Link>
-        <Link href="/outros-servicos">Outros</Link>
+        <Link href="/outros-servicos">Outros</Link> */}
       </nav>
     </div>
   )
